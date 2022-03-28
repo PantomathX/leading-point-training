@@ -1,0 +1,8 @@
+.application-header {
+    position: fixed;
+    height: 50px;
+    background-color: beige;
+    width: 100%;
+    top: 0px;
+    left: 0;
+}
