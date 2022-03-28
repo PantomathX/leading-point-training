@@ -6,3 +6,26 @@
     top: 0px;
     left: 0;
 }
+
+.spacing {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.menu-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.button-margin { 
+    margin-right: 10px;
+    margin-left: 10px;
+}

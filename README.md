@@ -1,9 +1,11 @@
 ## links
 - https://angular.io/start
 - https://angular.io/cli/generate
+- https://flexbox.help/
 
 
 ## cli commands
+- ng generate module <NAME>
 - ng generate component <NAME>
 - ng serve
 - ng new
