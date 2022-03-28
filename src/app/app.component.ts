@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  links: string[] = ['Home', 'About', 'Contact'];
+  links: string[] = ['home', 'about', 'contact'];
 }

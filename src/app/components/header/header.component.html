@@ -3,7 +3,7 @@
     <mat-icon>home</mat-icon>
   </button>
   <div class="menu-list">
-    <button mat-flat-button *ngFor="let route of routes" class="button-margin">{{route}}</button>
+    <button mat-flat-button *ngFor="let route of routes" class="button-margin" [routerLink]="'/'+route">{{route}}</button>
   </div>
   <span>{{ title }}</span>
   <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">

@@ -5,6 +5,7 @@
 
 
 ## cli commands
+- ng generate module app-routing --flat --module=app
 - ng generate module <NAME>
 - ng generate component <NAME>
 - ng serve
