@@ -1,7 +1,7 @@
 ## links
 - https://angular.io/start
 - https://angular.io/cli/generate
-
+- https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf
 
 ## cli commands
 - ng generate component <NAME>
