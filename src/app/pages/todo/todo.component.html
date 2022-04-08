@@ -1,0 +1,16 @@
+<mat-grid-list cols="2" >
+    <mat-grid-tile>
+        <mat-selection-list>
+            <mat-list-option *ngFor="let todoItem of tdList.todoList">
+                <h4 mat-line>{{todoItem.title}}</h4>
+                <p mat-line>{{todoItem.date.toLocaleDateString()}}</p>
+            </mat-list-option>
+          </mat-selection-list>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-form-field>
+            <input #todoInput matInput placeholder="Add new todo item">
+            <button matSuffix mat-raised-button (click)="tdList.addNewTodoItem(todoInput.value)" >add</button>
+        </mat-form-field>
+    </mat-grid-tile>
+</mat-grid-list>
