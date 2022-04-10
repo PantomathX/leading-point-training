@@ -11,7 +11,6 @@ export class AppComponent {
 
   heroes = [
     { id: 11, name: 'Mr. Nice', country: 'India' },
-    
     { id: 13, name: 'Bombasto' , country: 'UK'},
     { id: 14, name: 'Celeritas' , country: 'Canada' },
     { id: 20, name: 'Tornado' , country: 'Sri Lanka'},
@@ -24,7 +23,13 @@ export class AppComponent {
   ];
   filteredValues = this.heroes;
   filter(str : string){
-    this.filteredValues=this.heroes.filter(v => v.name.includes (str))
+    this.filteredValues= [];
+    for(let i=0; i<this.heroes.length; i++){
+      if(this.heroes[i].name.toLowerCase().indexOf(str.toLowerCase())!=-1){
+        this.filteredValues.push(this.heroes[i]);
+      }
+    }
   }
+  
 
 }

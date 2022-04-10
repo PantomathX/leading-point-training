@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { TodoComponent } from './pages/todo/todo.component';
 
 
 const routes: Routes = [
 
-  { path: '', redirectTo:'about', pathMatch:'full'},
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent},
-  { path: 'contact', component: ContactComponent },
-  { path: 'todo', component: TodoComponent}
+  { path: '', redirectTo:'home', pathMatch:'full'},
+  { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
+  { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) },
+  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  { path: 'todo', loadChildren: () => import('./pages/todo/todo.module').then(m => m.TodoModule) }
 
 ]
 
