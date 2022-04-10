@@ -1,0 +1,41 @@
+
+
+<form [formGroup]="registerForm" class="register-form" >
+    <mat-form-field appearance="standard">
+        <mat-label color="accent">First Name</mat-label>
+        <input matInput formControlName="firstName" placeholder="please input your first name ">
+        <mat-icon color="primary" matPrefix>person</mat-icon>
+        <mat-error *ngIf="registerForm.controls['firstName'].hasError('required')">
+            First name is required 
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls['firstName'].hasError('minlength')">
+            length should be at least 4 chars
+        </mat-error>
+        <mat-hint>Name should be more than 3 chars</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+        <mat-label>Input</mat-label>
+        <input matInput formControlName="lastName" placeholder="Placeholder">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        <mat-hint>Hint Here</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+        <mat-label>Input</mat-label>
+        <input matInput formControlName="email" placeholder="Placeholder">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        <mat-hint>Hint Here</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+        <mat-label>Input</mat-label>
+        <input matInput formControlName="password" placeholder="Placeholder">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        <mat-hint>Hint Here</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="standard">
+        <mat-label>Input</mat-label>
+        <input matInput formControlName="confirmPassword" placeholder="Placeholder">
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        <mat-hint>Hint Here</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button type="submit" (click)="onSubmitFunction()">Register</button>
+</form>
