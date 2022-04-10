@@ -3,6 +3,7 @@
 - https://angular.io/cli/generate
 - https://flexbox.help/
 
+- https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf
 
 ## cli commands
 - ng generate module app-routing --flat --module=app
